@@ -1,14 +1,10 @@
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
-    Caps_Lock: clear
-    Control_L: noop
-    Control_R: noop
-    Eisu_toggle: clear
-    Shift_L: inline_ascii
+    Shift_L: commit_code
     Shift_R: commit_text
-config_version: 0.36.custom.1998318267
-customization: 1998318267
+config_version: 0.36.custom.1648567879
+customization: 1648567879
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -44,7 +40,7 @@ key_binder:
     - {accept: "Shift+space", toggle: full_shape, when: always}
     - {accept: "Control+period", toggle: ascii_punct, when: always}
 menu:
-  page_size: 5
+  page_size: 6
 punctuator:
   full_shape:
     " ": {commit: "　"}
@@ -119,7 +115,11 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 schema_list:
+  - schema: english
+  - schema: ying_flypy
+  - schema: kana
   - schema: double_pinyin_flypy
+  - schema: luna_pinyin
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"

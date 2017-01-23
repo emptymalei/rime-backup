@@ -1,3 +1,13 @@
 patch:
+  menu:
+    page_size: 6
+  menu/page_size: 6
   schema_list:
+  - schema: english
+  - schema: ying_flypy
+  - schema: kana
   - schema: double_pinyin_flypy
+  - schema: luna_pinyin
+  ascii_composer/switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_text
