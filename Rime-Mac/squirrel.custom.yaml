@@ -1,0 +1,7 @@
+patch:
+  style:
+    border_height: 8
+    corner_radius: 15
+    color_scheme: google
+    horizontal: true
+    border_width: 8
